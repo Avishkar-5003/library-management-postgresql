@@ -1,0 +1,77 @@
+@charset "ISO-8859-1";
+
+body {
+	
+	background-color: ghostwhite;
+}
+
+.main {
+	
+	height: 450px;
+	width: 350px;
+	background-color: pink;
+	margin: 70px 0 0 400px;
+	border-radius:5px;
+	
+	
+}
+
+.textbox {
+	
+	height: 28px;
+	width: 70%;
+	margin: 0 0 0 40px;
+}
+
+.heading{
+	
+	padding: 20px 0 0 100px;
+}
+label {
+	
+	font-size: 12px;
+	padding: 0 0 0 40px;
+}
+
+.datebox {
+	
+	margin: 0 0 0 40px;
+	height: 28px;
+	width: 70%;
+}
+
+.finebox {
+	
+height: 28px;
+width: 30%;
+margin: 0 0 0 40px;
+}
+
+.paybox {
+    height: 28px;
+    width: 30%;
+    margin: 0 0 0 40px;
+    background-color: purple;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    text-align: center;
+    line-height: 28px; /* Ensures the text is vertically centered */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.paybox:hover {
+    background-color: #6a0dad; /* Darker purple on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+  
+
+
+.button {
+	height: 28px;
+	width: 30%;
+    
+    margin:0 0 0 130px;
+}
+

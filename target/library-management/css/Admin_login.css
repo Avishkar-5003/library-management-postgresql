@@ -1,0 +1,33 @@
+@charset "ISO-8859-1";
+
+
+.main {
+	
+	height: 400px;
+	width: 350px;
+	background-color: lightblue;
+	margin:80px 0 0 0;
+	box-sizing: border-box;
+}
+
+.textbox {
+	
+	height: 28px;
+	width: 70%;
+}
+
+.label {
+	
+   padding: 30px 0 0 0;
+   color: black;
+}
+
+.button {
+	
+	height: 28px;
+	width: 50%;
+	background-color: rgb(0, 64, 128);
+	border: none;
+	border-radius: 5px;
+	color: white;
+}

@@ -1,0 +1,67 @@
+@charset "ISO-8859-1";
+
+
+
+
+.main {
+	
+	height: 400px;
+	width: 700px;
+	margin: 90px 0 0 0;
+	
+}
+
+ 
+
+
+.left_div {
+	
+	height: 450px;
+	width:350px;
+	background-image: url('images/a.jpg');
+	background-size: cover;
+}
+
+.right_div {
+	
+	height: 450px;
+	width:350px;
+	background-color: rgb(211, 241, 205);
+	margin: 0;
+}
+
+.label_signup {
+	
+	padding: 20px 0 0 0;
+	font-size: 30px;
+}
+
+.textbox {
+	
+	height: 35px;
+	width: 80%;
+	border-radius: 5px;
+	border-radius-size: 0: ;
+}
+
+.textbox1 {
+	
+	height: 35px;
+	width: 40%;
+	border-radius: 5px;
+}
+     
+
+.button {
+	
+	height: 35px;
+	width: 40%;
+	border: none;
+	border-radius: 10px;
+	background-color: orangered;
+	
+}
+
+.label_login {
+	color: blue;
+}

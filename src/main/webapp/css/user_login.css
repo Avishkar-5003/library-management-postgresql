@@ -1,0 +1,67 @@
+@charset "ISO-8859-1";
+
+body {
+	background-image: url('images/aa.webp');
+	background-size: cover;
+}
+
+
+
+
+.main {
+	
+	background-color: lightblue;
+	height: 400px;
+	width: 350px;
+	margin: 100px 0 0 100px; 
+	padding: 10px 0 0 0;
+	border-radius: 15px;
+	
+	
+}
+
+	
+	
+
+
+.textbox {
+	
+	height: 30px;
+	width: 70%;
+	margin: 10px 0 0 ;
+
+}
+
+.button {
+	
+	height:30px;
+	width: 50%;
+	margin: 10px 0 0 ;
+	border: none;
+	background-color: rgb(63, 84, 169) ;
+	color: white;
+	border-radius: 10px;
+	}
+
+
+.avatar {
+	
+	height:15px;
+	
+	margin:5px 0 0 0;
+	
+}
+
+.signintitle
+{ 
+	margin-bottom: 5px;
+}
+
+
+.border {
+	border: 1px solid black;
+	width: 50%; 
+	align-items: center;
+	text-align: center;
+	
+}	
