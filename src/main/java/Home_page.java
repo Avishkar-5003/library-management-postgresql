@@ -13,6 +13,7 @@ import java.sql.Statement;
 /**
  * Servlet implementation class Home_page
  */
+@WebServlet("/Home_page")
 public class Home_page extends HttpServlet {
 	 Connection cn = null;
 	  
