@@ -10,6 +10,7 @@ import java.io.IOException;
 /**
  * Servlet implementation class Profile_page
  */
+@WebServlet("/Profile_page")
 public class Profile_page extends HttpServlet {
 	
 	@Override

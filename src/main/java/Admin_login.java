@@ -13,6 +13,7 @@ import java.sql.Statement;
 /**
  * Servlet implementation class Admin_login
  */
+@WebServlet("/Admin_login")
 public class Admin_login extends HttpServlet {
 	 Connection cn = null;
 	  

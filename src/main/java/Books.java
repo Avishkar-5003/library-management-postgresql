@@ -10,6 +10,7 @@ import java.io.IOException;
 /**
  * Servlet implementation class Books
  */
+@WebServlet("/Books")
 public class Books extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

@@ -12,6 +12,7 @@ import java.sql.*;
 /**
  * Servlet implementation class User_signup
  */
+@WebServlet("/User_signup")
 public class User_signup extends HttpServlet {
 	
 	Connection cn = null;

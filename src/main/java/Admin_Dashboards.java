@@ -10,6 +10,7 @@ import java.io.IOException;
 /**
  * Servlet implementation class Admin_Dashboards
  */
+@WebServlet("/Admin_Dashboards")
 public class Admin_Dashboards extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     @Override

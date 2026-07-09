@@ -13,6 +13,7 @@ import java.sql.Statement;
 /**
  * Servlet implementation class book_issue
  */
+@WebServlet("/book_issue")
 public class book_issue extends HttpServlet {
 	 Connection cn = null;
 	  

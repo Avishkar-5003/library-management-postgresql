@@ -12,6 +12,7 @@ import java.sql.*;
 /**
  * Servlet implementation class Profile
  */
+@WebServlet("/Profile")
 public class Profile extends HttpServlet {
 	private static final long serialVersionUID = 1L;
            @Override

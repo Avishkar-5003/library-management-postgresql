@@ -13,6 +13,7 @@ import java.sql.Statement;
 /**
  * Servlet implementation class Foget_Password
  */
+@WebServlet("/Forget_Password")
 public class Foget_Password extends HttpServlet {
 	 Connection cn = null;
 	  
