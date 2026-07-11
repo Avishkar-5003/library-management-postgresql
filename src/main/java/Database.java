@@ -12,17 +12,18 @@ public class Database {
 
         try {
 
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName("org.postgresql.Driver");
 
-            cn = DriverManager.getConnection(
-                "jdbc:mysql://gateway01.ap-southeast-1.prod.aws.tidbcloud.com:4000/sys?sslMode=VERIFY_IDENTITY&enabledTLSProtocols=TLSv1.2",
-                "3tSenSzHvyYCXUR.root",
-                "dfWNT0AIkM4M12pD"
-            );
+            String url = System.getenv("DB_URL");
+            String user = System.getenv("DB_USER");
+            String password = System.getenv("DB_PASSWORD");
+
+            cn = DriverManager.getConnection(url, user, password);
 
             return "Database Connected";
 
         } catch (Exception ex) {
+            ex.printStackTrace();
             return ex.toString();
         }
     }
@@ -44,6 +45,7 @@ public class Database {
             return "success";
 
         } catch (Exception ex) {
+            ex.printStackTrace();
             return ex.toString();
         }
     }
@@ -61,6 +63,7 @@ public class Database {
             return "success";
 
         } catch (Exception ex) {
+            ex.printStackTrace();
             return ex.toString();
         }
     }
@@ -78,6 +81,7 @@ public class Database {
             return "success";
 
         } catch (Exception ex) {
+            ex.printStackTrace();
             return ex.toString();
         }
     }
@@ -95,12 +99,16 @@ public class Database {
             ResultSet rs = st.executeQuery(sql);
 
             while (rs.next()) {
-                id = Integer.parseInt(rs.getString(column)) + 1;
+                id = rs.getInt(column) + 1;
             }
+
+            rs.close();
+            st.close();
 
             return String.valueOf(id);
 
         } catch (Exception ex) {
+            ex.printStackTrace();
             return ex.toString();
         }
     }
