@@ -5,45 +5,81 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Home Page</title>
-<link type="text/css" rel="stylesheet" href="css/Home_page.css" >
+
 <link rel="stylesheet" type="text/css" href="css/Home_page.css">
-<style type="text/css"> <%@include file="css/Home_page.css"%> </style>
+<style type="text/css">
+<%@ include file="css/Home_page.css"%>
+</style>
+
 </head>
+
 <body>
-     
-    <form name="Home_page" action="Home_page" method="post">
-      
-    <header>
-        <h1>Library Management System</h1>
-    </header>
-    <nav>
-        <a href="User_dashboards.jsp">User dashboard</a>
-        <a href="Books.jsp">Books</a>
-        <a href="Return_Book.jsp">Return Book</a>
-        <a href="book_issue.jsp">Book issue</a>
-    </nav>
-    <div class="hero">
-        <h1>Welcome to Our Library</h1>
-        <p>Discover, borrow, and manage your favorite books with ease and style.</p>
-        <a href="#books" class="button">Explore Now</a>
+
+<form name="Home_page" action="Home_page" method="post">
+
+<header>
+    <h1>Library Management System</h1>
+</header>
+
+<nav>
+    <a href="Home_Page.jsp">Home</a>
+    <a href="Books.jsp">Books</a>
+    <a href="User_login.jsp">Login</a>
+    <a href="User_signup.jsp">Sign Up</a>
+</nav>
+
+<div class="hero">
+
+    <h1>Welcome to Our Library</h1>
+
+    <p>
+        Discover, borrow, and manage your favorite books with ease and style.
+    </p>
+
+    <br><br>
+
+    <a href="User_login.jsp" class="button">Login</a>
+
+    &nbsp;&nbsp;&nbsp;
+
+    <a href="User_signup.jsp" class="button">Sign Up</a>
+
+    <br><br>
+
+    <a href="Books.jsp" class="button">Browse Books</a>
+
+</div>
+
+<div class="features">
+
+    <div class="feature">
+        <h3>Extensive Collection</h3>
+        <p>
+            Dive into thousands of books from different genres and authors.
+        </p>
     </div>
-    <div class="features">
-        <div class="feature">
-            <h3>Extensive Collection</h3>
-            <p>Dive into a vast array of books from different genres and authors worldwide.</p>
-        </div>
-        <div class="feature">
-            <h3>User-Friendly Interface</h3>
-            <p>Easily search, borrow, and track your books with an intuitive dashboard.</p>
-        </div>
-        <div class="feature">
-            <h3>Exclusive Perks</h3>
-            <p>Get recommendations, discounts, and access to members-only events.</p>
-        </div>
+
+    <div class="feature">
+        <h3>Easy Book Management</h3>
+        <p>
+            Issue books, return books and manage your library account easily.
+        </p>
     </div>
-    <footer>
-        <p>&copy; 2025 Library Management System. All rights reserved. Designed with care.</p>
-    </footer>
-    </form>
+
+    <div class="feature">
+        <h3>Secure User Account</h3>
+        <p>
+            Register, login and access your personal dashboard securely.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Library Management System. All Rights Reserved.</p>
+</footer>
+
+</form>
+
 </body>
 </html>

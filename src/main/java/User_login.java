@@ -31,10 +31,11 @@ public class User_login extends HttpServlet {
 
         if (event != null && event.equals("Submit")) {
 
+            // Validate input
             if (User_name == null || User_name.trim().isEmpty()
                     || Password == null || Password.trim().isEmpty()) {
 
-                out.println("<script>alert('Some Value is Empty');location='User_login.jsp';</script>");
+                out.println("<script>alert('Please enter Email and Password');location='User_login.jsp';</script>");
                 return;
             }
 
@@ -59,7 +60,7 @@ public class User_login extends HttpServlet {
 
                 if (rs.next()) {
 
-                    out.println("<script>alert('Login Successful');location='Home_Page.jsp';</script>");
+                    out.println("<script>alert('Login Successful');location='User_dashboard.jsp';</script>");
 
                 } else {
 
@@ -73,7 +74,8 @@ public class User_login extends HttpServlet {
             } catch (Exception ex) {
 
                 ex.printStackTrace();
-                out.println("<script>alert('" + ex.getMessage() + "');location='User_login.jsp';</script>");
+
+                out.println("<script>alert('" + ex.getMessage().replace("'", "") + "');location='User_login.jsp';</script>");
             }
         }
     }

@@ -17,6 +17,13 @@ public class Database {
             String url = System.getenv("DB_URL");
             String user = System.getenv("DB_USER");
             String password = System.getenv("DB_PASSWORD");
+            
+            if (url == null || user == null || password == null) {
+                // Running locally in Eclipse
+                url = "jdbc:postgresql://localhost:5432/YOUR_DATABASE";
+                user = "postgres";
+                password = "YOUR_LOCAL_PASSWORD";
+            }
 
             cn = DriverManager.getConnection(url, user, password);
 
