@@ -60,7 +60,7 @@ public class User_login extends HttpServlet {
 
                 if (rs.next()) {
 
-                    out.println("<script>alert('Login Successful');location='User_dashboard.jsp';</script>");
+                    out.println("<script>alert('Login Successful');location='User_dashboards.jsp';</script>");
 
                 } else {
 
